@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>可編輯簡報示例</title>
+<style>
+*{box-sizing:border-box}body{margin:0}.slide{width:1280px;height:720px;position:relative;background:#faf9f6;overflow:hidden;break-after:page}
+[data-pptx]{position:absolute;margin:0;padding:0} [data-pptx=text]{font-family:Arial,"Microsoft JhengHei",sans-serif;font-size:32px;line-height:1.25;color:#173042;white-space:pre-wrap}
+.notes{display:none}
+</style>
+<section class="slide">
+<div data-pptx="rect" style="left:64px;top:72px;width:12px;height:84px;background:#176b87"></div>
+<h1 data-pptx="text" style="left:100px;top:70px;width:1080px;height:100px;font-size:52px;font-weight:700">從 HTML 到可編輯 PowerPoint</h1>
+<p data-pptx="text" style="left:100px;top:220px;width:1080px;height:150px">先寫內容與版面，再由瀏覽器計算位置。
+文字在 PowerPoint 中仍然可以修改。</p>
+<div data-pptx="rect" style="left:100px;top:440px;width:1080px;height:140px;background:#e3edf0"></div>
+<p data-pptx="text" style="left:132px;top:475px;width:1016px;height:90px">HTML/CSS → Chromium → 原生物件 → PPTX</p>
+<aside class="notes">這頁展示製作順序。請打開 PPT，試著修改標題，確認它是文字框。</aside>
+</section>
+<section class="slide">
+<h1 data-pptx="text" style="left:80px;top:60px;width:1120px;height:90px;font-size:48px;font-weight:700">精確數據保留為原生圖表</h1>
+<div data-pptx="chart" style="left:100px;top:190px;width:800px;height:380px" data-chart='{"type":"bar","series":[{"name":"教學示例，非實測","labels":["A","B","C"],"values":[3,5,4]}]}'></div>
+<p data-pptx="text" style="left:950px;top:240px;width:250px;height:240px;font-size:30px">數據為示範。
+可在 PPT 編輯圖表數據。</p>
+<aside class="notes">這是虛構的教學數據，只用來示範可編輯圖表，不代表研究結果。</aside>
+</section></html>
